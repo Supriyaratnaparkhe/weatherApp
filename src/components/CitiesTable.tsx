@@ -69,7 +69,15 @@ const CitiesTable: React.FC = () => {
         city.name.toLowerCase().startsWith(searchTerm.toLowerCase())
       )
       .map((city) => city.name);
-
+    if (suggestions.length === 0) {
+        return (
+          <div className="suggestiondiv">
+            <div className="border border-gray-300 px-4 py-2 text-red-500">
+              No cities found
+            </div>
+          </div>
+        );
+      }
     return (
       <div className="suggestiondiv">
         {suggestions.map((suggestion, index) => (

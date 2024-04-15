@@ -1,0 +1,11 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.suggestiondiv{
+    width: 30vw;
+    background: rgb(234, 234, 234);
+    z-index: 1;
+    position: absolute;
+    top:25%;
+}

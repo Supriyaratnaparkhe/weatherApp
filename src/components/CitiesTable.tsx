@@ -153,7 +153,7 @@ const CitiesTable: React.FC = () => {
         <tbody>
           {filteredCities.map((city) => (
             <tr key={city.geoname_id} className="hover:bg-gray-100">
-              <td className="border border-gray-300 px-4 py-2">
+              <td className="border border-gray-300 px-4 py-2 text-center">
                 <Link
                   to={`/weather/${city.name}/${city.cou_name_en}`}
                   className="text-600 hover:underline"
@@ -161,10 +161,10 @@ const CitiesTable: React.FC = () => {
                   {city.name}
                 </Link>
               </td>
-              <td className="border border-gray-300 px-4 py-2">
+              <td className="border border-gray-300 px-4 py-2 text-center">
                 {city.cou_name_en}
               </td>
-              <td className="border border-gray-300 px-4 py-2">
+              <td className="border border-gray-300 px-4 py-2 text-center">
                 {city.timezone}
               </td>
             </tr>
